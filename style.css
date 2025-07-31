@@ -1,0 +1,87 @@
+/* تنسيقات عامة للصفحة */
+body {
+    font-family: Arial, sans-serif;    /* نوع الخط */
+    margin: 0;                         /* إزالة الهوامش الافتراضية */
+    padding: 20px;                     /* مساحة داخلية */
+    background-color: #f4f4f4;         /* لون الخلفية */
+    line-height: 1.6;                  /* ارتفاع السطر */
+    direction: rtl;                     /* اتجاه النص للعربية */
+    text-align: right;                  /* محاذاة النص لليمين */
+}
+
+/* تنسيق العناوين الرئيسية */
+h1 {
+    color: #333;                        /* لون النص */
+    text-align: center;                 /* محاذاة وسط */
+    margin-bottom: 20px;                /* مساحة أسفل العنوان */
+    font-size: 2.5em;                   /* حجم الخط */
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1); /* ظل النص */
+}
+
+/* تنسيق الفقرات */
+p {
+    color: #666;                        /* لون النص */
+    font-size: 1.1em;                   /* حجم الخط */
+    margin-bottom: 15px;                /* مساحة أسفل الفقرة */
+    max-width: 800px;                   /* عرض أقصى */
+    margin-left: auto;                  /* توسيط تلقائي */
+    margin-right: auto;                 /* توسيط تلقائي */
+}
+
+/* تنسيق قائمة التنقل */
+nav {
+    margin-top: 30px;                   /* مساحة أعلى التنقل */
+    text-align: center;                 /* محاذاة وسط */
+    background-color: #fff;             /* لون خلفية أبيض */
+    padding: 15px;                      /* مساحة داخلية */
+    border-radius: 10px;                /* زوايا مدورة */
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1); /* ظل */
+    max-width: 600px;                   /* عرض أقصى */
+    margin-left: auto;                  /* توسيط */
+    margin-right: auto;                 /* توسيط */
+}
+
+/* تنسيق الروابط */
+nav a {
+    margin: 0 15px;                     /* مساحة جانبية */
+    text-decoration: none;              /* إزالة التسطير */
+    color: #007bff;                     /* لون أزرق */
+    font-weight: bold;                  /* خط عريض */
+    font-size: 1.1em;                   /* حجم الخط */
+    padding: 10px 20px;                 /* مساحة داخلية */
+    border-radius: 5px;                 /* زوايا مدورة */
+    transition: all 0.3s ease;          /* انتقال سلس */
+    border: 2px solid transparent;      /* حدود شفافة */
+}
+
+/* تأثير عند مرور الماوس على الروابط */
+nav a:hover {
+    background-color: #007bff;          /* لون خلفية أزرق */
+    color: white;                       /* لون النص أبيض */
+    border: 2px solid #0056b3;         /* حدود زرقاء غامقة */
+    transform: translateY(-2px);        /* رفع طفيف */
+    box-shadow: 0 4px 8px rgba(0,123,255,0.3); /* ظل ملون */
+}
+
+/* تنسيق الرابط النشط */
+nav a:active {
+    transform: translateY(0);           /* إرجاع الموضع */
+    box-shadow: 0 2px 4px rgba(0,123,255,0.2); /* ظل أقل */
+}
+
+/* تنسيقات للأجهزة المحمولة */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;                  /* مساحة أقل على الجوال */
+    }
+    
+    h1 {
+        font-size: 2em;                 /* خط أصغر على الجوال */
+    }
+    
+    nav a {
+        display: block;                 /* عرض عمودي */
+        margin: 10px 0;                 /* مساحة عمودية */
+        padding: 15px;                  /* مساحة أكبر للمس */
+    }
+}
